@@ -104,7 +104,7 @@ func ParseFlags() {
 		f.StringVar(&Flags.TLSCertFile, "tls-certificate", "", "Path to the file containing the x509 TLS certificate to be used. The file should also contain any intermediate certificates and the CA certificate.")
 		f.StringVar(&Flags.TLSKeyFile, "tls-key", "", "Path to the file containing the key for the TLS certificate.")
 		f.StringVar(&Flags.TLSMode, "tls-mode", "tls12", "Specify which TLS mode to use; valid modes are tls13, tls12, and tls12-strong.")
-		f.BoolVar(&Flags.ForceProtoHTTPS, "force-proto-http", false, "Force to use HTTP protocol event tough certificate is not installed on the server (for example TLS is installed on Cloudflare).")
+		f.BoolVar(&Flags.ForceProtoHTTPS, "force-proto-https", false, "Force to use HTTP protocol event tough certificate is not installed on the server (for example TLS is installed on Cloudflare).")
 	})
 
 	fs.AddGroup("Upload protocol options", func(f *flag.FlagSet) {

@@ -46,6 +46,7 @@ func Serve() {
 		AcquireLockTimeout:               Flags.AcquireLockTimeout,
 		GracefulRequestCompletionTimeout: Flags.GracefulRequestCompletionTimeout,
 		NetworkTimeout:                   Flags.NetworkTimeout,
+		ForceProtoHTTPS:                  Flags.ForceProtoHTTPS,
 	}
 
 	var handler *tushandler.Handler
