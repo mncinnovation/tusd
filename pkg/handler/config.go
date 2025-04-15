@@ -103,6 +103,9 @@ type Config struct {
 	// Under the hood, this is passed to ResponseController.SetReadDeadline
 	// Defaults to 60s
 	NetworkTimeout time.Duration
+	// ForceProtoHTTPS is flag to Force to use HTTP protocol event tough certificate is not installed
+	//  on the server (for example TLS is installed on Cloudflare).
+	ForceProtoHTTPS bool
 }
 
 // CorsConfig provides a way to customize the the handling of Cross-Origin Resource Sharing (CORS).
